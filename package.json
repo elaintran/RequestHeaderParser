@@ -1,0 +1,22 @@
+{
+  "name": "requestheaderparser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elaintran/RequestHeaderParser.git"
+  },
+  "author": "Elain Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elaintran/RequestHeaderParser/issues"
+  },
+  "homepage": "https://github.com/elaintran/RequestHeaderParser#readme",
+  "dependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
