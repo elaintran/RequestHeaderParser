@@ -3,10 +3,12 @@ var express = require('express');
 //var cors = require('cors');
 var app = express();
 
-app.get("api/whoami", function(req, res) {
+app.get("/api/whoami", function (req, res) {
+	var language = req.acceptsLanguages();
 	var ip_address = req.ip;
-	res.json({ipaddress: ip_address});
-})
+	var software;
+	res.json({"ipaddress": ip_address, "language": language[0]});
+});
 
 //express server & serve HTML file
 app.get("/", function(req, res) {
