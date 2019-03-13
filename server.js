@@ -4,10 +4,10 @@ var express = require('express');
 var app = express();
 
 app.get("/api/whoami", function (req, res) {
-	var language = req.acceptsLanguages();
 	var ip_address = req.ip;
-	var software;
-	res.json({"ipaddress": ip_address, "language": language[0]});
+	var language = req.get('Accept-Language');
+	var software = req.get('User-Agent');
+	res.json({"ipaddress": ip_address, "language": language, "software": software});
 });
 
 //express server & serve HTML file
